@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 600px;
+    height: 600px;
+    position: relative;
+   
+}
+
+.square1,
+.square2,
+.square3,
+.square4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* background-color: pink; */
+    border-radius: 50%;
+    border: 30px solid green;
+}
+
+.square1 {
+    top: 0;
+    left: 0;
+    border-right: 30px solid transparent;
+    transform: rotate(45deg);
+}
+
+.square2 {
+    top: 0;
+    right: 0;
+    border-left: 30px solid transparent;
+    transform: rotate(-45deg);
+}
+
+.square3 {
+    bottom: 0;
+    right: 0;
+    border-left: 30px solid transparent;
+    transform: rotate(45deg);
+}
+
+.square4 {
+    bottom: 0;
+    left: 0;
+    border-right: 30px solid transparent;
+    transform: rotate(-45deg);
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+    width: 30px;
+    height: 400px;
+    background-color: green;
+    position: absolute;
+}
+
+.col-1 {
+    top: 100px;
+    left: 170px;
+}
+
+.col-2 {
+    top: 100px;
+    right: 170px;
+
+}
+
+.col-3 {
+    width: 400px;
+    height: 30px;
+    top: 170px;
+    left: 100px;
+}
+
+.col-4 {
+    width: 400px;
+    height: 30px;
+    bottom: 170px;
+    left: 100px;
+}
+
+/* .square1:hover,
+.square2:hover,
+.square3:hover,
+.square4:hover,
+.col-1:hover,
+.col-2:hover,
+.col-3:hover,
+.col-4:hover{
+   background-color: blue;
+} */
